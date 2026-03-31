@@ -5,232 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MP43 Studios | Creative Video Production</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Page Loader -->
-    <div class="page-loader" id="pageLoader">
-        <div class="loader-content">
-            <span>MP43</span>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#home" class="logo">
-                <h1>MP43<span>.</span></h1>
+    <nav class="nav">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="MP43 Studios">
             </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Work</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <!-- Hero Section - Simplified -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
+        <div class="hero-bg">
+            <div class="light-beam beam-1"></div>
+            <div class="light-beam beam-2"></div>
+            <div class="light-beam beam-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
                 <p class="hero-tagline">Creative Studio</p>
                 <h1>
-                    <span class="line-reveal">Moments Perfected</span>
-                    <span class="line-reveal"><em>In Every Frame</em></span>
+                    <span class="line">Moments</span>
+                    <span class="line">Perfected</span>
                 </h1>
-                <p class="hero-description">
-                    We craft compelling videos and designs that bring your vision to life.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn-primary">
-                        <span>View Our Work</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </a>
-                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                <p class="hero-subtitle">In Every Frame</p>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="circle-frame">
+                    <div class="circle-inner"></div>
+                </div>
+                <div class="floating-elements">
+                    <span class="float-text left">Production</span>
+                    <span class="float-text right">Casting</span>
                 </div>
             </div>
         </div>
+        
         <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="scroll-arrow">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"/>
-                </svg>
-            </div>
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">What We Do</span>
                 <h2 class="section-title">Our Expertise</h2>
-                <div class="title-line"></div>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-number">01</div>
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <path d="M23 7l-7 5 7 5V7z"/>
-                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
-                        </svg>
-                    </div>
+                    <span class="service-number">01</span>
                     <h3>Video Shooting</h3>
                     <p>Professional video capture for your special moments and events.</p>
-                    <a href="#contact" class="service-link">
-                        <span>Contact Us</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </a>
-                </div>
-                <div class="service-card featured">
-                    <div class="service-badge">Signature Service</div>
-                    <div class="service-number">02</div>
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
-                            <line x1="7" y1="2" x2="7" y2="22"/>
-                            <line x1="17" y1="2" x2="17" y2="22"/>
-                            <line x1="2" y1="12" x2="22" y2="12"/>
-                            <line x1="2" y1="7" x2="22" y2="7"/>
-                            <line x1="2" y1="17" x2="22" y2="17"/>
-                        </svg>
-                    </div>
-                    <h3>Video Making</h3>
-                    <p>From raw footage to masterpiece. Expert editing and post-production.</p>
-                    <a href="#contact" class="service-link">
-                        <span>Contact Us</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </a>
                 </div>
                 <div class="service-card">
-                    <div class="service-number">03</div>
-                    <div class="service-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                            <polyline points="21 15 16 10 5 21"/>
-                        </svg>
-                    </div>
+                    <span class="service-number">02</span>
+                    <h3>Video Making</h3>
+                    <p>From raw footage to masterpiece. Expert editing and post-production.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-number">03</span>
                     <h3>Poster Design</h3>
                     <p>Eye-catching visual designs that make an impact.</p>
-                    <a href="#contact" class="service-link">
-                        <span>Contact Us</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <line x1="5" y1="12" x2="19" y2="12"/>
-                            <polyline points="12 5 19 12 12 19"/>
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Selected Work</span>
                 <h2 class="section-title">Our Portfolio</h2>
-                <div class="title-line"></div>
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item large">
-                    <div class="portfolio-image">
-                        <div class="placeholder-gradient gradient-1"></div>
-                        <div class="portfolio-number">01</div>
-                    </div>
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_1.MP4" type="video/mp4">
+                    </video>
                     <div class="portfolio-info">
                         <span class="portfolio-category">Video Shooting</span>
-                        <h3>Wedding Event Coverage</h3>
-                        <p>Complete wedding day documentation</p>
+                        <h3>Project 01</h3>
+                        <p>Creative video production</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="placeholder-gradient gradient-2"></div>
-                        <div class="portfolio-number">02</div>
-                    </div>
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_2.MP4" type="video/mp4">
+                    </video>
                     <div class="portfolio-info">
                         <span class="portfolio-category">Video Making</span>
-                        <h3>Brand Commercial</h3>
-                        <p>30-second promotional video</p>
+                        <h3>Project 02</h3>
+                        <p>Professional editing</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="placeholder-gradient gradient-3"></div>
-                        <div class="portfolio-number">03</div>
-                    </div>
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_3.MP4" type="video/mp4">
+                    </video>
                     <div class="portfolio-info">
-                        <span class="portfolio-category">Poster Design</span>
-                        <h3>Music Festival Poster</h3>
-                        <p>Event promotional design</p>
+                        <span class="portfolio-category">Video Production</span>
+                        <h3>Project 03</h3>
+                        <p>Visual storytelling</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="placeholder-gradient gradient-4"></div>
-                        <div class="portfolio-number">04</div>
-                    </div>
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_4.MP4" type="video/mp4">
+                    </video>
                     <div class="portfolio-info">
                         <span class="portfolio-category">Video Shooting</span>
-                        <h3>Corporate Conference</h3>
-                        <p>Multi-camera event recording</p>
+                        <h3>Project 04</h3>
+                        <p>Cinematic moments</p>
                     </div>
                 </div>
                 <div class="portfolio-item large">
-                    <div class="portfolio-image">
-                        <div class="placeholder-gradient gradient-5"></div>
-                        <div class="portfolio-number">05</div>
-                    </div>
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_5.MP4" type="video/mp4">
+                    </video>
                     <div class="portfolio-info">
                         <span class="portfolio-category">Video Making</span>
-                        <h3>Music Video Production</h3>
-                        <p>Full post-production & VFX</p>
+                        <h3>Project 05</h3>
+                        <p>Creative direction</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <video class="portfolio-video" autoplay muted loop playsinline>
+                        <source src="Work_6.MP4" type="video/mp4">
+                    </video>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Video Production</span>
+                        <h3>Project 06</h3>
+                        <p>Visual content</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section - Simplified -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content-simple">
-                <span class="section-label">Who We Are</span>
-                <h2 class="section-title">Crafting Visual Stories</h2>
-                <div class="title-line"></div>
-                <p class="about-text">
-                    We are <strong>MP43 Studios</strong> — a creative studio passionate about visual storytelling.
-                    We bring your ideas to life through video production, editing, and design.
-                </p>
-                <p class="about-text">
-                    Every project is an opportunity to create something unique and meaningful.
-                    Let's work together to bring your vision to reality.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Quote Section -->
     <section class="quote-section">
         <div class="container">
             <div class="quote-content">
@@ -246,153 +170,54 @@
         </div>
     </section>
 
-    <!-- Instagram QR Section -->
-    <section class="instagram-section">
+    <section id="about" class="about">
         <div class="container">
-            <div class="instagram-content">
-                <span class="section-label">Follow Us</span>
-                <h2 class="section-title">Connect on Instagram</h2>
-                <div class="title-line"></div>
-                <p class="instagram-description">
-                    Scan to follow our latest work and behind-the-scenes content.
-                </p>
-                <div class="qr-wrapper">
-                    <div class="qr-code">
-                        <img src="qr/mp43studio_qr.png" alt="MP43 Studios Instagram QR Code" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="qr-placeholder" style="display: none;">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
-                                <rect x="3" y="3" width="7" height="7"/>
-                                <rect x="14" y="3" width="7" height="7"/>
-                                <rect x="3" y="14" width="7" height="7"/>
-                                <rect x="14" y="14" width="3" height="3"/>
-                                <rect x="18" y="14" width="3" height="3"/>
-                                <rect x="14" y="18" width="3" height="3"/>
-                                <rect x="18" y="18" width="3" height="3"/>
-                            </svg>
-                            <span>QR Code</span>
-                        </div>
-                    </div>
+            <div class="about-content">
+                <span class="section-label">Who We Are</span>
+                <h2 class="section-title">Crafting Visual Stories</h2>
+                <div class="about-texts">
+                    <p class="about-text">
+                        We are <strong>MP43 Studios</strong> — a creative studio passionate about visual storytelling.
+                        We bring your ideas to life through video production, editing, and design.
+                    </p>
+                    <p class="about-text">
+                        Every project is an opportunity to create something unique and meaningful.
+                        Let's work together to bring your vision to reality.
+                    </p>
                 </div>
-                <a href="https://www.instagram.com/mp43studio/" target="_blank" rel="noopener noreferrer" class="btn-instagram">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
-                    <span>@mp43studio</span>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section - Simplified -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-simple">
-                <span class="section-label">Get In Touch</span>
-                <h2 class="section-title">Let's Create Together</h2>
-                <div class="title-line"></div>
-                <p class="contact-description">
-                    Ready to bring your vision to life? Reach out to us.
-                </p>
-
-                <div class="contact-details-simple">
-                    <div class="contact-item-simple">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <span class="label">Instagram</span>
-                            <a href="https://www.instagram.com/mp43studio/" target="_blank" rel="noopener noreferrer" class="value">@mp43studio</a>
-                        </div>
-                    </div>
-                    <div class="contact-item-simple">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <span class="label">Email</span>
-                            <a href="mailto:mp43studio@gmail.com" class="value">mp43studio@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item-simple">
-                        <div class="contact-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-text">
-                            <span class="label">Phone</span>
-                            <a href="tel:+917902762197" class="value">+91 79027 62197</a>
-                        </div>
-                    </div>
+            <div class="contact-content">
+                <div class="contact-item">
+                    <span class="label">Instagram</span>
+                    <a href="https://www.instagram.com/mp43studio/" target="_blank" rel="noopener">@mp43studio</a>
+                </div>
+                <div class="contact-divider"></div>
+                <div class="contact-item">
+                    <span class="label">Email</span>
+                    <a href="mailto:mp43studio@gmail.com">mp43studio@gmail.com</a>
+                </div>
+                <div class="contact-divider"></div>
+                <div class="contact-item">
+                    <span class="label">Phone</span>
+                    <a href="tel:+917902762197">+91 79027 62197</a>
+                </div>
+                <div class="contact-divider"></div>
+                <div class="contact-item">
+                    <span class="label">Phone</span>
+                    <a href="tel:+917736599346">+91 77365 99346</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h2>MP43<span>.</span></h2>
-                    <p>Creative studio crafting visual stories.</p>
-                    <div class="footer-contact-boxes">
-                        <a href="https://www.instagram.com/mp43studio/" target="_blank" rel="noopener noreferrer" class="footer-contact-box" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                            </svg>
-                        </a>
-                        <a href="mailto:mp43studio@gmail.com" class="footer-contact-box" aria-label="Email">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Work</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Video Shooting</a></li>
-                            <li><a href="#services">Video Making</a></li>
-                            <li><a href="#services">Poster Design</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <ul>
-                            <li><a href="https://www.instagram.com/mp43studio/" target="_blank" rel="noopener noreferrer">@mp43studio</a></li>
-                            <li><a href="mailto:mp43studio@gmail.com">mp43studio@gmail.com</a></li>
-                            <li><a href="tel:+917902762197">+91 79027 62197</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 MP43 Studios. All rights reserved.</p>
-            </div>
+            <p>&copy; 2026 MP43 Studios. All rights reserved.</p>
         </div>
     </footer>
 
