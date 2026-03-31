@@ -469,14 +469,6 @@ section {
     transform: scale(1.05);
 }
 
-.portfolio-item.large .portfolio-video {
-    transform: rotate(90deg) scale(1.1);
-}
-
-.portfolio-item.large:hover .portfolio-video {
-    transform: rotate(90deg) scale(1.15);
-}
-
 .gradient-1 { background: linear-gradient(135deg, #1a1a1e 0%, #2a2a30 50%, #3a3a42 100%); }
 .gradient-2 { background: linear-gradient(135deg, #232328 0%, #33333a 50%, #43434d 100%); }
 .gradient-3 { background: linear-gradient(135deg, #2a2a30 0%, #3a3a42 50%, #4a4a55 100%); }
